@@ -1,0 +1,42 @@
+.full-cover {
+  height: auto;
+  width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-direction: normal;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+  -webkit-animation-direction: normal;
+}
+
+.content {
+  z-index: 10;
+  position: relative;
+}
+
+.top-box {
+  background-color: #ddd;
+  background-size:cover;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}

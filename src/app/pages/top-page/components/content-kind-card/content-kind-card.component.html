@@ -1,0 +1,11 @@
+<div
+  class="card"
+  (click)="onClickCard()"
+  [@cardAnim]="!cardAnim ? initState : endState"
+  (@cardAnim.done)="animCardEnd($event)"
+  [ngStyle]="{background: contentKind.color}"
+>
+  <div class="border"></div>
+  <img [@imageAnim]="!imageAnim ? initState : endState" (@imageAnim.start)="animImageStart($event)" [src]="contentKind.imageUrl" />
+  <h1 [@textAnim]="!textAnim ? initState : endState">{{ contentKind.description }}</h1>
+</div>

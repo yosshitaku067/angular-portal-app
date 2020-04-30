@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  word-spacing: 3.4px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .content {
+        margin-left: 200px;
+        margin-right: 200px;
+
+        .title {
+            margin-top: 70px;
+            margin-bottom: 90px;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .content {
+
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .content {
+
+    }
+}
+
+@media all and (max-width: 480px) {
+    .content {
+
+    }
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+  .content {
+
+}
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+  .content {
+    margin-left: 200px;
+    margin-right: 200px;
+
+    .title {
+        margin-top: 70px;
+        margin-bottom: 90px;
+    }
+}
+}
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+    .content {
+
+    }
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+    .content {
+
+    }
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .content {
+    }
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+    .content {
+
+    }
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
+    .content {
+
+    }
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
+
+}
