@@ -3,6 +3,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { ContentService } from '../../core/services/content.service';
 import { ContentKind } from '../../interfaces/content';
 import { DOCUMENT } from '@angular/common';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contents-page',
@@ -32,4 +33,9 @@ export class ContentsComponent implements OnInit {
   backgroundImage() {
     return `background: #ddd url(${this.contentKind.imageUrl}) 50% 50% no-repeat`;
   }
+
+  src(image: string) {
+    return environment.imageBase + image;
+  }
+
 }

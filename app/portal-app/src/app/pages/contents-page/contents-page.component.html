@@ -3,7 +3,7 @@
     <div
       class="top-box"
       [ngStyle]="{
-        'background-image': 'url(' + contentKind?.imageUrl + ')'
+        'background-image': 'url(' + src(contentKind?.imageUrl) + ')'
       }"
     >
       <div class="title">{{ contentKind?.description }}</div>

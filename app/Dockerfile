@@ -8,10 +8,10 @@ FROM node:lts-alpine as base
 RUN npm install -g @angular/cli
 
 # ワーキングディレクトリの設定
-WORKDIR /angular-app
+WORKDIR /portal-app
 
 # package.jsonをコピー
-COPY ./angular-app/package*.json /angular-app/
+COPY ./portal-app/package*.json /portal-app/
 
 # 一度 node_modules を削除してからnpm install
 RUN rm -rf node_modules && npm install
@@ -20,10 +20,10 @@ RUN rm -rf node_modules && npm install
 FROM base as angular-build
 
 # 全てのソースコードをコピー
-COPY ./angular-app /angular-app/
+COPY ./portal-app /portal-app/
 
 # プロダクションビルド
-RUN ng build --prod --base-href=/angular-app/
+RUN ng build --prod --base-href=/portal-app/
 ######################################################################################
 
 ##################### express build ##################################################
@@ -43,5 +43,5 @@ RUN rm -rf node_modules && npm install
 COPY ./express-app /express-app/
 
 # ビルド済みangularサイトをコピー
-COPY --from=angular-build /angular-app/dist/angular-app /express-app/www/angular-app
+COPY --from=angular-build /portal-app/dist/portal-app /express-app/www/portal-app
 ######################################################################################

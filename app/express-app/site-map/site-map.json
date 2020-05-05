@@ -4,7 +4,7 @@
       "nextPage": "contents",
       "title": "Testing Tools",
       "description": "Testing Tools",
-      "imageUrl": "/assets/imgs/image.jpg",
+      "imageUrl": "image.jpg",
       "colorSet": {
         "primary": {
           "color": "#EB5160",
@@ -35,28 +35,28 @@
           "title": "Tool A",
           "url": "",
           "description": "Testing Tool for A Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
-          "imageUrl": "/assets/imgs/image.jpg",
+          "imageUrl": "image.jpg",
           "id": ""
         },
         {
           "title": "Tool B",
           "url": "",
           "description": "Testing Tool for B Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
-          "imageUrl": "/assets/imgs/image.jpg",
+          "imageUrl": "image.jpg",
           "id": ""
         },
         {
           "title": "Tool C",
           "url": "",
           "description": "Testing Tool for C Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
-          "imageUrl": "/assets/imgs/image.jpg",
+          "imageUrl": "image.jpg",
           "id": ""
         },
         {
           "title": "Tool D",
           "url": "",
           "description": "Testing Tool for D Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
-          "imageUrl": "/assets/imgs/image.jpg",
+          "imageUrl": "image.jpg",
           "id": ""
         }
       ]
@@ -65,7 +65,7 @@
       "nextPage": "contents",
       "title": "Visualization Tools",
       "description": "Visualization Tools",
-      "imageUrl": "/assets/imgs/image.jpg",
+      "imageUrl": "image.jpg",
       "id": "viz",
       "colorSet": {
         "primary": {

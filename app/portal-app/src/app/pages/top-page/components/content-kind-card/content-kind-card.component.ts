@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { trigger, transition, style, query, state, animate, keyframes, AnimationEvent } from '@angular/animations';
 import { Router } from '@angular/router';
 import { ContentKind } from '../../../../interfaces/content';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-content-kind-card',
@@ -99,4 +100,9 @@ export class ContentKindCardComponent implements OnInit {
       }
     }
   }
+
+  src(image: string) {
+    return environment.imageBase + image;
+  }
+
 }

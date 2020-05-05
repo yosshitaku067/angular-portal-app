@@ -3,7 +3,7 @@
   class="card"
   [ngStyle]="{ background: colorSet.color }"
 >
-  <img [ngStyle]="{ 'box-shadow': plainBoxShadow() }" [src]="content.imageUrl" />
+  <img [ngStyle]="{ 'box-shadow': plainBoxShadow() }" [src]="src(content.imageUrl)" />
   <h1>{{ content.title }}</h1>
   <p>{{ content.description }}</p>
   <div class="button-area">

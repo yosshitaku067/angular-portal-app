@@ -7,7 +7,7 @@
   <img
     [@imageAnim]="!imageAnim ? initState : endState"
     (@imageAnim.start)="animImageStart($event)"
-    [src]="contentKind.imageUrl"
+    [src]="src(contentKind.imageUrl)"
     [ngStyle]="{ 'box-shadow': plainBoxShadow() }"
   />
   <div [@textAnim]="!textAnim ? initState : endState">

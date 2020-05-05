@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Content } from 'src/app/interfaces/content';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-content-card',
@@ -45,4 +46,9 @@ export class ContentCardComponent implements OnInit {
   onClick() {
     window.open(this.content.url, '_blank');
   }
+
+  src(image: string) {
+    return environment.imageBase + image;
+  }
+
 }
