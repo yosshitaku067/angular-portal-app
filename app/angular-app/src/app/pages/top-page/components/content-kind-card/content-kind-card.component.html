@@ -1,0 +1,22 @@
+<div
+  class="card"
+  [@cardAnim]="!cardAnim ? initState : endState"
+  (@cardAnim.done)="animCardEnd($event)"
+  [ngStyle]="{ background: contentKind.colorSet.primary.color }"
+>
+  <img
+    [@imageAnim]="!imageAnim ? initState : endState"
+    (@imageAnim.start)="animImageStart($event)"
+    [src]="contentKind.imageUrl"
+    [ngStyle]="{ 'box-shadow': plainBoxShadow() }"
+  />
+  <div [@textAnim]="!textAnim ? initState : endState">
+    <h1>{{ contentKind.title }}</h1>
+    <div>
+      <p>{{ contentKind.description }}</p>
+    </div>
+  </div>
+  <div class="button-area">
+    <button [ngStyle]="{ background: contentKind.colorSet.primary.color, 'box-shadow': boxShadow() }" (mouseover)="mouseover = true" (mouseout)="mouseover = false" (click)="onClickCard(); isClicked = true">Open</button>
+  </div>
+</div>

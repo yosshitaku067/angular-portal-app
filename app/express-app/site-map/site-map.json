@@ -1,0 +1,97 @@
+{
+  "sites": [
+    {
+      "nextPage": "contents",
+      "title": "Testing Tools",
+      "description": "Testing Tools",
+      "imageUrl": "/assets/imgs/image.jpg",
+      "colorSet": {
+        "primary": {
+          "color": "#EB5160",
+          "primaryShadow": {
+            "primary": "#5e2026",
+            "second": "#ff829a"
+          },
+          "secondaryShadow": {
+            "primary": "#bc414d",
+            "second": "#ff6173"
+          }
+        },
+        "secondary": {
+          "color": "#EF6A77",
+          "primaryShadow": {
+            "primary": "#602a30",
+            "second": "#ffaabe"
+          },
+          "secondaryShadow": {
+            "primary": "#a74a53",
+            "second": "#ff8a9b"
+          }
+        }
+      },
+      "id": "test",
+      "contents": [
+        {
+          "title": "Tool A",
+          "url": "",
+          "description": "Testing Tool for A Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
+          "imageUrl": "/assets/imgs/image.jpg",
+          "id": ""
+        },
+        {
+          "title": "Tool B",
+          "url": "",
+          "description": "Testing Tool for B Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
+          "imageUrl": "/assets/imgs/image.jpg",
+          "id": ""
+        },
+        {
+          "title": "Tool C",
+          "url": "",
+          "description": "Testing Tool for C Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
+          "imageUrl": "/assets/imgs/image.jpg",
+          "id": ""
+        },
+        {
+          "title": "Tool D",
+          "url": "",
+          "description": "Testing Tool for D Application. That's a great tool to save time. It's very easy to use and makes your job a lot easier.",
+          "imageUrl": "/assets/imgs/image.jpg",
+          "id": ""
+        }
+      ]
+    },
+    {
+      "nextPage": "contents",
+      "title": "Visualization Tools",
+      "description": "Visualization Tools",
+      "imageUrl": "/assets/imgs/image.jpg",
+      "id": "viz",
+      "colorSet": {
+        "primary": {
+          "color": "#8F3985",
+          "primaryShadow": {
+            "primary": "#391735",
+            "second": "#e55bd5"
+          },
+          "secondaryShadow": {
+            "primary": "#722e6a",
+            "second": "#ac44a0"
+          }
+        },
+        "secondary": {
+          "color": "#8F3985",
+          "primaryShadow": {
+            "primary": "#391735",
+            "second": "#e55bd5"
+          },
+          "secondaryShadow": {
+            "primary": "#722e6a",
+            "second": "#ac44a0"
+          }
+        }
+      },
+      "contents": []
+    }
+  ]
+}

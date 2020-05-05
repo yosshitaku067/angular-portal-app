@@ -1,0 +1,12 @@
+
+  <div
+  class="card"
+  [ngStyle]="{ background: colorSet.color }"
+>
+  <img [ngStyle]="{ 'box-shadow': plainBoxShadow() }" [src]="content.imageUrl" />
+  <h1>{{ content.title }}</h1>
+  <p>{{ content.description }}</p>
+  <div class="button-area">
+    <button [ngStyle]="{ background: colorSet.color, 'box-shadow': boxShadow() }" (mouseover)="mouseover = true" (mouseout)="mouseover = false; isClicked = false" (click)="isClicked = true; onClick()">Open</button>
+  </div>
+</div>

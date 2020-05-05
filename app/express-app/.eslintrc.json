@@ -1,0 +1,63 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": ["error", { "allow": ["log"] }],
+    // js で require できなくなるため off にする
+    "@typescript-eslint/no-var-requires": "off",
+    // 関数戻り値の型定義を省略可能にする
+    "@typescript-eslint/explicit-function-return-type": "off",
+    // interface 名に `I` プレフィックスを使用することを許容する
+    "@typescript-eslint/interface-name-prefix": "off",
+    // 明示的な any は使用したいため off にする
+    "@typescript-eslint/no-explicit-any": "off",
+    // デフォルト引数以外では、型推論できる場合は型定義を書かない
+    "@typescript-eslint/no-inferrable-types": [
+      "error",
+      { "ignoreParameters": true }
+    ],
+    // クラスのメンバに public はつけない
+    "@typescript-eslint/explicit-member-accessibility": [
+      "error",
+      { "accessibility": "no-public" }
+    ],
+    // 命名規則
+    "@typescript-eslint/naming-convention": [
+      "error",
+      // 変数は lowerCamelCase
+      { "selector": "variableLike", "format": ["camelCase"] },
+      // private なメンバに `_` をつけることを許容する
+      {
+        "selector": "memberLike",
+        "modifiers": ["private"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      // publicなメンバに `_` をつけない
+      {
+        "selector": "memberLike",
+        "modifiers": ["public"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "forbid"
+      },
+      // class、interface などは UpperCamelCase
+      { "selector": "typeLike", "format": ["PascalCase"] }
+    ]
+  }
+}

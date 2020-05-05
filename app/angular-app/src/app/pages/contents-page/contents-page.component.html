@@ -1,0 +1,24 @@
+<div class="full-cover">
+  <div class="content">
+    <div
+      class="top-box"
+      [ngStyle]="{
+        'background-image': 'url(' + contentKind?.imageUrl + ')'
+      }"
+    >
+      <div class="title">{{ contentKind?.description }}</div>
+    </div>
+    <div fxLayout="row warp" fxLayoutAlign="start start">
+      <div
+        fxFlex.xs="100"
+        fxFlex.sm="100"
+        fxFlex.md="50"
+        fxFlex.lg="33.3"
+        fxFlex.xl="33.3"
+        *ngFor="let c of contentKind?.contents"
+      >
+        <app-content-card [content]="c" [colorSet]="contentKind.colorSet.secondary"></app-content-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.card {
+  width: 92%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card > img {
+  margin-top: 5%;
+  padding: 3px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.button-area {
+  text-align: center;
+  padding: 5px;
+
+  button {
+    margin-bottom: 10px;
+    padding: 1.5em 5em;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 31px;
+  }
+}

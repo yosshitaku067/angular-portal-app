@@ -1,0 +1,44 @@
+.background {
+  position: absolute;
+  background: rgba(234, 233, 241, 0.7);
+  background: radial-gradient(
+    circle,
+    rgba(234, 233, 241, 0.7) 0%,
+    rgba(26, 124, 166, 0.7) 36%,
+    rgba(31, 37, 38, 1) 100%
+  );
+  top: -80vh;
+  bottom: -10vh;
+  left: -10vh;
+  right: -130vh;
+  z-index: -1;
+  transform: rotate(30deg);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 50%;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow:  10px 10px 20px #666666, 
+               -10px -10px 20px #ffffff;
+}
+
+button:hover {
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow:  10px 10px 20px #b3b3b3, 
+               -10px -10px 20px #ffffff;
+}
+
+button:active {
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: inset 10px 10px 20px #b3b3b3, 
+              inset -10px -10px 20px #ffffff;
+}
