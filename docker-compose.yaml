@@ -8,5 +8,7 @@ services:
         container_name: angular-node-express
         ports:
             - 3000:3000
-        command: [sh, -c, npm install && npm start]
-    
+        command: [sh, -c, npm install && npm run start]
+        volumes:
+            - './app/express-app/images:/express-app/images'
+            - './app/express-app/site-map:/express-app/site-map'
